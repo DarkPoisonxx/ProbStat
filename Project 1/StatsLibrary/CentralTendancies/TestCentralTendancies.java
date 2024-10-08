@@ -1,11 +1,10 @@
-package CentralTendancies;
 
 public class TestCentralTendancies {
    
     public static void main(String[] args){
         CentralTendancies test = new CentralTendancies();
         
-        double[] mySampleNumbers = {1,1,1,2,2,2,3};
+        double[] mySampleNumbers = {1,1,2,2,2,3};
         double storeResults = CentralTendancies.findMean(mySampleNumbers);
         double medianResults = test.findMedian(mySampleNumbers);
         double modeResults = test.findMode(mySampleNumbers);

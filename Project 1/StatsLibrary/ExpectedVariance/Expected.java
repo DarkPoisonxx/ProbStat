@@ -1,4 +1,3 @@
-package StatsLibrary.ExpectedVariance;
 
 public class Expected {
 

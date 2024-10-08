@@ -1,4 +1,3 @@
-package StatsLibrary.PermutationCombination;
 
 public class Permutations {
     //Method for permutation
@@ -12,10 +11,5 @@ public class Permutations {
             denom *= j;
         }
         return numerator/denom;
-    }
-    //Method for combitnation
-    public double Combination(){
-
-        return 0.0;
     }
 }

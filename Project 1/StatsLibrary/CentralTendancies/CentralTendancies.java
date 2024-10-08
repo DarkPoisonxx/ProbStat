@@ -1,4 +1,3 @@
-package CentralTendancies;
 
 public class CentralTendancies {
     public CentralTendancies(){
@@ -9,6 +8,7 @@ public class CentralTendancies {
         
     }
     
+    // Finds the Mean
     public static double findMean(double[] mySampleNumbers){
         double sum = 0;
         for(int i = 0; i < mySampleNumbers.length; i++){
@@ -17,6 +17,7 @@ public class CentralTendancies {
         return sum / mySampleNumbers.length;
     }
     
+    // Finds the Median
     public double findMedian(double[] mySampleNumbers){
         int length = mySampleNumbers.length;
         if(length % 2 == 0){
@@ -29,6 +30,7 @@ public class CentralTendancies {
             return mySampleNumbers[(length + 1)];  
     }
     
+    // Finds the Mode 
     public double findMode(double[] mySampleNumbers){
         double max = 1;
         double mode = mySampleNumbers[0];
@@ -47,6 +49,7 @@ public class CentralTendancies {
                  multipleModes = occurance;
             }
         }
+            // Returns null for multiple modes
         if(multipleModes == max){
             return Double.NaN;
         }

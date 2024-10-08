@@ -1,6 +1,5 @@
-package StatsLibrary.ExpectedVariance;
 
-import StatsLibrary.CentralTendancies.CentralTendancies;
+
 
 public class StandatdDeviation {
     //finding deviation with variance method

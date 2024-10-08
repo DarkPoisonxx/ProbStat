@@ -1,6 +1,4 @@
-package StatsLibrary.ExpectedVariance;
 
-import StatsLibrary.CentralTendancies.CentralTendancies;
 public class Variance {
     
     //Method for finding variance

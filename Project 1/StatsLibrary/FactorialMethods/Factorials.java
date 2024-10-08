@@ -1,10 +1,10 @@
-package StatsLibrary.FactorialMethods;
+
 
 import java.math.BigInteger;
 
 public class Factorials {
     //Recursive method for long Factorial
-    public long RecursiveFactorial(long n){
+    public static long RecursiveFactorial(long n){
         if(n == 0 || n == 1){
         return 1;
         }

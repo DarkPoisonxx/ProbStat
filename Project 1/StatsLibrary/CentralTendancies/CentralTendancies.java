@@ -1,15 +1,7 @@
 
 public class CentralTendancies {
-    public CentralTendancies(){
-        
-    }
-    
-    public CentralTendancies(double[] userInput){
-        
-    }
-    
     // Finds the Mean
-    public static double findMean(double[] mySampleNumbers){
+    public double findMean(double[] mySampleNumbers){
         double sum = 0;
         for(int i = 0; i < mySampleNumbers.length; i++){
             sum = mySampleNumbers[i] + sum;

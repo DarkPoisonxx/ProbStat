@@ -1,4 +1,5 @@
 package BirthdayProgram;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class BirthdayProgram {
@@ -20,19 +21,23 @@ public class BirthdayProgram {
     }
 
 
-    public double chance(int numPeople, int runTimes){
-        int sameBirthdays = 0;
-        for( int i = 0; i < runTimes; i++){
-            if(isBirthday(numPeople)){
-                sameBirthdays += 1;
-            }
+    public double chance(int numPeople, int runTimes) {
+    int sameBirthdays = 0;
+    for (int i = 0; i < runTimes; i++) {
+        if (isBirthday(numPeople)) {
+            sameBirthdays += 1;
         }
-        double percentage = (double) sameBirthdays / runTimes;
-        return percentage;
     }
+    double percentage = (double) sameBirthdays / runTimes * 100; 
+
+    DecimalFormat decimalFormat = new DecimalFormat("#.##");
+    String formattedPercentage = decimalFormat.format(percentage);
+    System.out.println("Chance of at least two people sharing a birthday: " + formattedPercentage + "%");
+    return percentage; 
+}
     public static void main(String[] args) {
         BirthdayProgram test = new BirthdayProgram();
-        System.out.println(test.chance(90, 100000));
+        test.chance(30, 100000);
     }
 }
 

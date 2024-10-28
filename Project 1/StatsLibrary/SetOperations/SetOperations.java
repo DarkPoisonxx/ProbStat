@@ -2,11 +2,10 @@
 import java.util.ArrayList;
 
 public class SetOperations {
-    //TO DO
-    
+
     
 
-    public static ArrayList<Double> intersection(ArrayList<Double> set1, ArrayList<Double> set2){
+    public ArrayList<Double> intersection(ArrayList<Double> set1, ArrayList<Double> set2){
         ArrayList<Double> finalSet = new ArrayList<>();
         for(int i = 0; i < set1.size(); i++){
             for (int j = 0; j < set2.size(); j++){
@@ -18,7 +17,7 @@ public class SetOperations {
         return finalSet;
     }
 
-    public static ArrayList<Double> union(ArrayList<Double> set1, ArrayList<Double> set2){
+    public ArrayList<Double> union(ArrayList<Double> set1, ArrayList<Double> set2){
         ArrayList<Double> finalSet = new ArrayList<>();
         for(int i = 0; i < set1.size(); i++){
             for (int j = 0; j < set2.size(); j++){
@@ -35,6 +34,8 @@ public class SetOperations {
         }
         return finalSet;
     }
+
+
 
 
 }

@@ -16,8 +16,8 @@ public class Test {
         System.out.println("Set Union");
         System.out.println(set1);
         System.out.println(set2);
-
-        System.out.println((SetOperations.intersection(set1,set2)));
-        System.out.println(SetOperations.union(set1, set2));
+        SetOperations test = new SetOperations();
+        System.out.println((test.intersection(set1,set2)));
+        System.out.println(test.union(set1, set2));
     }
 }

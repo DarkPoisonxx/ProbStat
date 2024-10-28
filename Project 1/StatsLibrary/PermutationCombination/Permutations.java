@@ -1,4 +1,5 @@
 
+
 public class Permutations {
     //Method for permutation
     public double Permutation(int n, int r){

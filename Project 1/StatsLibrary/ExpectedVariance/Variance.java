@@ -3,8 +3,9 @@ public class Variance {
     
     //Method for finding variance
     public static double findVariance(double[] x, int dataPoints){
+        CentralTendancies find = new CentralTendancies();
         double varainaceTotal = 0;
-        double mean = CentralTendancies.findMean(x);
+        double mean = find.findMean(x);
         for (int i = 0; i < x.length - 1; i++){
             varainaceTotal += (x[i] - mean) * (x[i]- mean);
         }
